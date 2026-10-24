@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "WPSD RadioID Namen",
+  "version": "2.1.1",
+  "description": "Ergänzt die Tabellen im WPSD-Dashboard um Name und Wohnort zum Rufzeichen (Daten von radioid.net) und zeigt das QRZ-Profilfoto des aktuellen Anrufers.",
+  "homepage_url": "https://github.com/DH1NOC/wpsd-radioid",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://radioid.net/*",
+    "https://www.qrz.com/*"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "WPSD RadioID",
+    "default_popup": "popup.html"
+  }
+}
